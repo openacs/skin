@@ -11,7 +11,7 @@
         <database-support>
              <database>oracle-8.1.6</database>
         </database-support>
-        <owner url="mailto:christian@arsdigita.com">Christian Brechbühler</owner>
+        <owner url="mailto:christian@arsdigita.com">Christian Brechbuhler</owner>
         <summary>Demonstration of skins or cobranding.</summary>
         <release-date>2001-02-23</release-date>
         <vendor url="http://www.arsdigita.com/">ArsDigita Corporation</vendor>
