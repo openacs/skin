@@ -9,7 +9,8 @@
 
     <version name="0.1d" url="http://www.arsdigita.com/acs-repository/download/apm/skin-0.1d.apm">
         <database-support>
-             <database>oracle-8.1.6</database>
+             <database>oracle</database>
+             <database>postgresql</database>
         </database-support>
         <owner url="mailto:christian@arsdigita.com">Christian Brechbuhler</owner>
         <summary>Demonstration of skins or cobranding.</summary>
