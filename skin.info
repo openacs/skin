@@ -5,7 +5,7 @@
     <package-name>Skin</package-name>
     <pretty-plural>Skins</pretty-plural>
     <singleton-p>t</singleton-p>
-    <initial-install-p>t</initial-install-p>
+    <initial-install-p>f</initial-install-p>
 
     <version name="4.5" url="http://www.openacs.org/repository/download/apm/skin-4.5.apm">
         <database-support>
