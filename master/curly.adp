@@ -10,10 +10,10 @@
   </property>
 
   <if @title@     not nil>
-    <property name="title"    >@title@</property>
+    <property name="title"    >@title;noquote@</property>
   </if>
   <if @signatory@ not nil>
-    <property name="signatory">@signatory@</property>
+    <property name="signatory">@signatory;noquote@</property>
   </if>
 
   <table border=0 cellspacing=0 cellpadding=0 width="100%">

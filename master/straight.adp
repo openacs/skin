@@ -54,13 +54,13 @@
     
 
 <if @title@        not nil>
-  <property name="title"       >@title@</property>
+  <property name="title"       >@title;noquote@</property>
 </if>
 
 <if @header_stuff@ not nil>
-  <property name="header_stuff">@header_stuff@</property>
+  <property name="header_stuff">@header_stuff;noquote@</property>
 </if>
 
 <if @signatory@    not nil>
-  <property name="signatory"   >@signatory@</property>
+  <property name="signatory"   >@signatory;noquote@</property>
 </if>
