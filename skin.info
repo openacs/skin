@@ -23,22 +23,6 @@
         <requires url="acs-tcl" version="4.1"/>
         <requires url="acs-templating" version="4.1.2"/>
 
-        <files>
-            <file path="master/curly.adp"/>
-            <file path="master/curly.tcl"/>
-            <file path="master/straight.adp"/>
-            <file path="master/straight.tcl"/>
-            <file type="package_spec" path="skin.info"/>
-            <file type="documentation" path="www/doc/index.html"/>
-            <file type="content_page" path="www/image/clear.gif"/>
-            <file type="content_page" path="www/image/curly/lower-left.gif"/>
-            <file type="content_page" path="www/image/curly/lower-right.gif"/>
-            <file type="content_page" path="www/image/curly/lower.gif"/>
-            <file type="content_page" path="www/image/curly/upper-left.gif"/>
-            <file type="content_page" path="www/image/curly/upper-right.gif"/>
-            <file type="content_page" path="www/image/curly/upper.gif"/>
-            <file type="content_page" path="www/image/straight/acs-logo.gif"/>
-        </files>
         <parameters>
         <!-- No version parameters -->
         </parameters>
