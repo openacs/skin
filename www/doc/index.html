@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>The Skin Demo</title>
+  </head>
+
+  <body bgcolor="#ffffff">
+    <h2>The Skin Demo</h2>
+    <p>
+      Master pages (sometimes called "master templates") can define a
+      look that several pages share.  They wrap themselves around the
+      main or "slave" page, like a skin.  If the master page isn't
+      specified, the default master of the closest ancestor of type
+      acs-subsite in the site map applies.  This allows different
+      per-subsite skins around common pages.  That's also called
+      "cobranding".  The purpose of the "skin" package is to
+      demonstrate with a <em>primitive</em> example how
+      acs-templating supports this.
+    </p>
+
+    <h3>Installaion</h3>
+    <p>
+      To get the subsite demo on your server, you need to perform the
+      following steps manually.
+    </p>
+    <ul>
+      <li>
+	Obtain the <code>skin</code> package.  (At that point you can
+	read this documentation as <code>/doc/skin</code> on your
+	server.)
+      </li>
+      <li>
+	Mount it on /skin.
+	<ul>
+	  <li>
+	    Go to <a href="/admin/site-map">/admin/site-map</a> on
+	    your server.
+	  </li>
+	  <li>In the first row, "Main Site", follow "new sub
+	    folder".</li>
+	  <li>Type "skin" in the box.</li>
+	  <li>Click "New".</li>
+	  <li>In the new row, "skin", follow "mount"</li>
+	  <li>
+	    You'll find "Skin" at the bottom, under the centraized
+	    services, which are usually not meant to be mounted.
+	    Mount it (follow the link) anyway.
+	  </li>
+	</ul>
+      <li>
+	Create subsite "Curly" with another "api-doc"
+	<ul>
+	  <li>
+	    You should still be at <a href = "/admin/site-map"
+	    >/admin/site-map</a>.
+	  </li>
+	  <li>
+	    Add another "new sub folder" to the "Main Site" as
+	    "curly".  Make it a "new application" called "Curly";
+	    leave the application "ACS Subsite"
+	  </li>
+	  <li>
+	    Add a "new sub folder" to "Curly" as "api-doc".  Follow
+	    "mount", then from the middle block (instances already
+	    mounted elsewhere) follow "ACS API Browser" to create
+	    another location.
+	  </li>
+	</ul>
+      </li>
+      <li>
+	Set different skins for subsites "/" and "/curly"
+	<ul>
+	  <li>
+	    In the top row "Main Site", follow "set parameters"
+	  </li>
+	  <li>
+	    Scroll to the bottom and change parameter "DefaultMaster"
+	    to "/packages/skin/master/straight".  (The "straight" skin
+	    features a logo.  It is hardcoded for simplicity, but
+	    could be another parameter of subsite, or looked up in a
+	    table.)
+	  </li>
+	  <li>
+	    Click "Set Parameters" to submit your change.
+	  </li>
+	  <li>
+	    Repeat the above steps for node "/curly", setting
+	    "DefaultMaster" to "/packages/skin/master/curly"
+	  </li>
+	</ul>
+      </li>
+      <li>
+	Notice how these skins change the look of familiar pages:
+	<ul>
+	  <li>
+	    <a href="/">/</a> and <a href="/curly/">/curly/</a>
+	  </li>
+	  <li>
+	    <a href="/pvt/home">/pvt/home</a> and <a
+	      href="/curly/pvt/home">/curly/pvt/home</a>
+	  </li>
+	  <li>
+	    <a href="/api-doc">/api-doc</a> and <a
+	      href="/curly/api-doc">/curly/api-doc</a>
+	  </li>
+	  <li>
+	    <a href="/admin">/admin</a> and <a
+	      href="/curly/admin">/curly/admin</a>
+	  </li>
+	</ul>
+    </ul>
+    <hr>
+    <address><a href="mailto:christian@arsdigita.com">Christian Brechbuehler</a></address>
+<!-- Created: Tue Feb 20 13:56:01 EST 2001 -->
+<!-- hhmts start -->
+Last modified: Fri Feb 23 15:22:12 EST 2001
+<!-- hhmts end -->
+  </body>
+</html>
